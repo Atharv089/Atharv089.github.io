@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+<!--------Header only navgivation part-->
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#servies">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onlcick="openmenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p>Welcome!</p>
+            <h1>Hi, I'm <span>Atharv</span></h1>
+            <h2> Student at KLE Technoogical University,<br> Hubli</h2>
+        </div>
+    </div>
+</div>
+<!---------about -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="png_mine.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> A passionate individual with a strong enthusiasm for 
+                    technological advancements in software development and 
+                    innovative solutions. Committed to applying insights gained
+                     from academic projects to real-world challenges. Eager to
+                      learn and adapt to new technologies while thriving in 
+                      collaborative environments to create impactful solutions 
+                      that enhance user experiences and drive progress in the 
+                      industry. With a strong foundation in problem-solving and 
+                      critical thinking, I am excited to contribute to projects 
+                      that push boundaries and promote continuous improvement.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('education')">Education </p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience and Training </p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses and Certifications</p>
+                      </div>
+                      <!-- skills  -->
+                      <div class="tab-contents active-tab" id ="skills"> 
+                        <ul>
+                            <li><span>Languages</span><br>C/C++</li>
+                            <li><span>Core Subjects</span><br> Operating System, Networking, OOPS</li>
+                            <li><span>Areas of Interest</span><br> Technology, Photography, Organizational Skills</li>
+                            <li><span>Soft Skills</span><br>Communication, Leadership, Problem-Solving, Teamwork, Time management</li>
+                        </ul>
+                      </div>
+                      <!-- education -->
+                      <div class="tab-contents" id ="education"> 
+                        <ul>
+                            <!-- <li><span>Education</span><br>C/C++</li> -->
+                            <li><span>2021 - 2025</span><br>KLE Technological University, Hubballi<br><span>B.E, Electronics and Communication</span> </li>
+                            <li><span>2019 - 2021</span><br>Mahatma Gandhi Vishwasth Mandal’s PU College, Belagavi<br><span>Pre-University Education </span> </li>
+                            <li><span>2009 - 2019</span><br>Kendriya Vidyalaya CBSE Board, Belagavi<br><span>Secondary School Examination (Class X)</span> </li>
+                        </ul>
+                      </div>
+                      <!-- experenice -->
+                      <div class="tab-contents" id ="experience">
+                        <ul>
+                            <!-- <li><span>Experience and Training</span><br>C/C++</li> -->
+                            <li><span>Project Intern</span><br> CIM (Central for Intelligence and Mobility)<br>Involved in various projects at the CIM, focusing on advancing automotive mobility solutions. Gained 
+                                hands-on experience in improving vehicle safety and performance through innovative technologies and 
+                                various solutions.
+                                </li>
+                            
+                        </ul>
+                      </div>
+                      <!-- Courses -->
+                      <div class="tab-contents" id ="courses">
+                        <ul>
+                            <!-- <li><span>Courses and Certifications</span><br></li> -->
+                            <li><span>Codecademy</span><br>Learn C++</li>
+                            <li><span>Coursera</span><br>  Introduction to Networking</li>
+                            <li><span>Forage</span><br>Accenture North America Project Management Job Simulation</li>
+                            <li><span>Scaler</span><br> Fundamentals of Operating Systems</li>
+                        </ul>
+                      </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------services--------
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <h2>Door Open Warning System</h2>
+                <p>The project aimed to enhance driver safety by utilizing the YOLO v8 object detection model integrated 
+                    with a camera system. The model was trained on a dataset of annotated images to recognize and predict 
+                    the presence of open doors, thereby providing timely warnings to prevent potential accidents. The 
+                    achieved output was successful real-time detection and alerting system, enabling improved situational
+                    awareness and response for drivers.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Gesture-Based In-Cabin Control With Embedded ML-Enabled Out-Cabin</h2>
+                <p>The project aimed to develop a gesture-based control system for in-cabin functionalities and an 
+                    embedded machine learning-enabled system for monitoring out-cabin airbags in automobiles. The 
+                    gesture-based control system enhanced user experience by enabling touch-free interactions within the 
+                    vehicle. Concurrently, the ML-enabled monitoring system ensured real-time airbag status detection and 
+                    response, significantly improving passenger safety and vehicle intelligence.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Canny Edge Detection</h2>
+                <p>This project aimed to optimize the Canny edge detection algorithm by implementing it across multiple 
+                    parallel computing platforms, including OpenMP, CUDA, and OpenCL. The objective was to compare their
+                    performance in terms of execution time, efficiency, and resource utilization on both multi-core 
+                    CPUs and NVIDIA GPUs. Using OpenMP for parallel processing, CUDA for GPU acceleration, and OpenCL
+                    for cross-platform compatibility, the results showed significant performance improvements, with 
+                    CUDA achieving the highest speedup, followed by OpenCL and OpenMP. The project also highlighted
+                    the trade-offs between CUDA's superior GPU performance and OpenCL's flexibility for heterogeneous
+                    computing environments.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <h2>Safe Chew: Food Spoilage Detection</h2>
+                <p>SAFE-CHEW, short for "Spoilage Alert & Food Evaluation for Consumable Health and Environmental
+                    Wellness," is a portable system designed to detect food spoilage in real-time, ensuring consumers
+                    receive safe and high-quality food. Using the ESP32 microcontroller and MQ2/MQ3 gas sensors, it
+                    continuously monitors spoilage indicators like methane and alcohol emissions, signaling when food 
+                    items may no longer be safe to consume. With real-time alerts displayed via LEDs and LCD screens,
+                    SAFE-CHEW is a reliable, user-friendly tool that promotes food safety and reduces waste. Its 
+                    innovative approach aligns with global sustainability goals, enhancing public health and 
+                    environmental wellness.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- ------------------portfolio-------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Door/Door Open Warning System.webp">
+                <div class="layer">
+                    <h3>Door Open Warning System</h3>
+                    <p>The project aimed to enhance driver safety by utilizing the YOLO v8 object detection model integrated 
+                        with a camera system. The model was trained on a dataset of annotated images to recognize and predict 
+                        the presence of open doors, thereby providing timely warnings to prevent potential accidents. The 
+                        achieved output was successful real-time detection and alerting system, enabling improved situational
+                        awareness and response for drivers.</p>
+                        <a href="#">Learn More</a>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a>  -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="Gesture/1.png" alt="Work 2">
+                <div class="layer">
+                <h3>Gesture-Based In-Cabin Control With Embedded ML-Enabled Out-Cabin</h3>
+                    <p>The project aimed to develop a gesture-based control system for in-cabin functionalities and an 
+                        embedded machine learning-enabled system for monitoring out-cabin airbags in automobiles. The 
+                        gesture-based control system enhanced user experience by enabling touch-free interactions within the 
+                        vehicle. Concurrently, the ML-enabled monitoring system ensured real-time airbag status detection and 
+                        response, significantly improving passenger safety and vehicle intelligence.</p>
+                        <a href="#">Learn More</a>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+            <div class="work">
+                <img src="Canny/Canny Edge Dectec.png" alt="Work 2">
+                <div class="layer"> 
+                <h3>Canny Edge Detection</h3>
+                    <p>This project aimed to optimize the Canny edge detection algorithm by implementing it across multiple 
+                        parallel computing platforms, including OpenMP, CUDA, and OpenCL. The objective was to compare their
+                        performance in terms of execution time, efficiency, and resource utilization on both multi-core 
+                        CPUs and NVIDIA GPUs. Using OpenMP for parallel processing, CUDA for GPU acceleration, and OpenCL
+                        for cross-platform compatibility, the results showed significant performance improvements, with 
+                        CUDA achieving the highest speedup, followed by OpenCL and OpenMP. The project also highlighted
+                        the trade-offs between CUDA's superior GPU performance and OpenCL's flexibility for heterogeneous
+                        computing environments.</p>
+                        <a href="#">Learn More</a>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    </div>
+            </div>
+            <div class="work">
+                <img src="Spoilage/Screenshot 2024-10-26 231017.png" alt="Work 2">
+                <div class="layer"> 
+                <h3>Safe Chew: Food Spoilage Detection</h3>
+                    <p>SAFE-CHEW, short for "Spoilage Alert & Food Evaluation for Consumable Health and Environmental Wellness," 
+                        is a portable system designed to detect food spoilage in real-time, ensuring consumers receive safe and 
+                        high-quality food. Using the ESP32 microcontroller and MQ2/MQ3 gas sensors, it continuously monitors spoilage 
+                        indicators like methane and alcohol emissions, signaling when food items may no longer be safe to consume. 
+                        Real-time alerts are displayed through an intuitive display unit, making SAFE-CHEW a reliable, user-friendly 
+                        tool that promotes food safety and reduces waste. Its innovative approach aligns with global sustainability
+                        goals, enhancing public health and environmental wellness.</p>
+                        <a href="#">Learn More</a>
+                        <!-- <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                    <!-- </div> -->
+            </div>
+            
+        </div>
+        <!-- <a href="#" class="btn"></a> -->
+    </div>
+</div>
+<!-- ------------------------contact------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-envelope"></i>atharvamdesai@gmailcom</p>
+               
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/atharv-mutalik-desai-30495528a/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Atharv089"><i class="fab fa-github"></i></a> 
+                    
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbx6OtEGoFD_mjgRF1Gg9x-rS5uSNG5AfswmRhtlqtS7NFYv2M4AsMoluy5VvBtUPk5V/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
